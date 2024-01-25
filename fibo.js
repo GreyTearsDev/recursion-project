@@ -14,17 +14,7 @@ function fibs(n) {
   return fibNumbers
 }
 
-
 // Recursive Approach
-
-/*function fibsRec(n, current = 0, next = 1) {
-  if (n === 0) return current;
-
-  return fibsRec(n-1, next, current + next);
-} */
-
-console.log(fibsRec(8))
-
 function fibsRec(n, currentFiboNum = 0, nextFiboNum = 1, results = []) {
   if (n === 0) {
     results.push(currentFiboNum);
